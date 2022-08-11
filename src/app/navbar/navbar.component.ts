@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   
   navbarItems = [
-    {path: "about-me", linkName: 'About Me'},
     {path: "resume", linkName: 'Resume'},
+    {path: "about-me", linkName: 'About Me'},
     {path: "projects", linkName: 'Projects'}
   ];
 
