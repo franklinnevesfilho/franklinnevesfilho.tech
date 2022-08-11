@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MakingOfComponent } from './making-of/making-of.component';
+import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
