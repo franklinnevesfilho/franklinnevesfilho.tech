@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MakingOfComponent } from './making-of/making-of.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    routingComponents
+    routingComponents,
+    MakingOfComponent
   ],
   imports: [
     BrowserModule,
