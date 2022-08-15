@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { MakingOfComponent } from './making-of/making-of.component';
 import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ThankYouComponent } from './contact-form/thank-you/thank-you.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     NavbarComponent,
     routingComponents,
-    MakingOfComponent
+    ContactFormComponent,
+    ThankYouComponent,
   ],
   imports: [
     BrowserModule,
