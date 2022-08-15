@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ThankYouComponent } from './contact-form/thank-you/thank-you.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/about-me', pathMatch: 'full'},
@@ -12,7 +13,10 @@ const routes: Routes = [
   {path: 'about-me', component: AboutMeComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'contact-me', component: ContactFormComponent},
-  {path: 'contact/thank-you', component: ThankYouComponent}
+  {path: 'thank-you', component: ThankYouComponent},
+  
+  // method not found
+  {path: '**', component: PagenotfoundComponent}
 ];
 
 @NgModule({

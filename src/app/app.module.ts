@@ -1,31 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AppRoutingModule, routingComponents } from './app-routing.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
-import { ContactFormComponent } from './contact-form/contact-form.component';
-import { ThankYouComponent } from './contact-form/thank-you/thank-you.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    routingComponents,
-    ContactFormComponent,
-    ThankYouComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ClipboardModule
   ],
   exports:[
-    routingComponents
+    routingComponents,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   
   navbarItems = [
     {path: "resume", linkName: 'Resume'},
-    {path: "about-me", linkName: 'About Me'},
+    {path: "contact-me", linkName: 'Contact Me'},
     {path: "projects", linkName: 'Projects'}
   ];
 

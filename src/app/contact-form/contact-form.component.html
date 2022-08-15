@@ -1,21 +1,21 @@
-<div class="container text-center">
-    <h1>Contact Me</h1>
-    <form target="_blank" action="https://formsubmit.co/ff9a9b9bac96a4c062c66b0de689fa64" method="POST">
-      <div class="form-group">
-        <div class="form-row">
-          <div class="col">
-            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-          </div>
-          <div class="col">
-            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            <input type="hidden" name="_next" value="https://franklinnevesfilho.tech/contact/thank-you">
-            <input type="hidden" name="_captcha" value="false">
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <textarea placeholder="Please type in ypur message here" class="form-control" name="message" rows="10" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-lg btn-outline-dark btn-block mt-2">Submit Form</button>
-    </form>
+<form class="m-5 text-center">
+  <p class="h1">Send An Email Below</p>
+  <div class="form-group">
+    <input id="fullName" type="text" class="form-control" placeholder="Full Name">
   </div>
+  <div class="form-group">
+    <input id="userEmail" type="email" class="form-control" placeholder="Email Address">
+  </div>
+  <div class="form-control">
+    <textarea id="comment" cols="30" rows="10" class="form-control" placeholder="Type in email here"></textarea>
+  </div>
+  <button class="btn btn-lg btn-outline-dark">Submit</button>
+</form>
+<div class="row text-center">
+  <div class="col-6">
+    <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/franklinnevesfilho" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl me-1"></i>linkedin/franklinnevesfilho</a>
+  </div>
+  <div class="col-6">
+    <button class="btn btn-outline-dark" target="_blank" (click)="copyEmail()"><i class="fa-solid fa-envelope fa-xl me-1"></i>franklin.neves.filho@gmail.com</button>
+  </div>
+</div>
