@@ -14,7 +14,8 @@ export class ContactFormComponent implements OnInit {
   }
 
   copyEmail(){
-    this.clipboard.copy('');
+    this.clipboard.copy("franklin.neves.filho@gmail.com");
+    alert("Email Copied");
     
   }
 

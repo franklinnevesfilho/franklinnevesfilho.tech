@@ -1,15 +1,18 @@
-<form class="m-5 text-center">
+<form class="m-5 text-center" target="_blank" action="https://formsubmit.co/ff9a9b9bac96a4c062c66b0de689fa64" method="POST">
   <p class="h1">Send An Email Below</p>
   <div class="form-group">
-    <input id="fullName" type="text" class="form-control" placeholder="Full Name">
+    <input id="fullName" name="name" type="text" class="form-control" placeholder="Full Name" required>
   </div>
   <div class="form-group">
-    <input id="userEmail" type="email" class="form-control" placeholder="Email Address">
+    <input id="userEmail" name="email" type="text" class="form-control" placeholder="email" class="form-control" placeholder="Email Address" required>
   </div>
   <div class="form-control">
-    <textarea id="comment" cols="30" rows="10" class="form-control" placeholder="Type in email here"></textarea>
+    <textarea id="comment" name="message" cols="30" rows="10" class="form-control" placeholder="Type in email here"></textarea>
   </div>
-  <button class="btn btn-lg btn-outline-dark">Submit</button>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" box>
+  <input type="hidden" name="_next" value="https://franklinnevesfilho.tech/thank-you">
+  <button type="submit" class="btn btn-lg btn-outline-dark">Submit</button>
 </form>
 <div class="row text-center">
   <div class="col-6">
